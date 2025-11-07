@@ -1,5 +1,4 @@
- export const GetProducts = async () => {
-    let limit=10;
+ export const GetProducts = async ( limit=10) => {
   console.log("hi");
   const response = await axios.get(`https://dummyjson.com/products?limit=${limit}`);
   console.log("the response of get all is", response.data.products);
@@ -20,7 +19,7 @@ export const displayProducts = async () => {
     result = products
       .map((product) => {
         return `                   
-         <div class=" col-md-4   "> 
+         <div class=" col-lg-3 col-md-4 col-sm-6 pb-4"> 
                         <div class="card" >
                              <img src="${product.images[0]}" class="card-img-top" alt="..."> 
                             <div class="card-body">

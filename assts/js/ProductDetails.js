@@ -13,11 +13,12 @@ const displayProductDetials=async()=>{
     const prodDetiles=response.data;
     console.log(prodDetiles);
 
+
+    document.querySelector('.product-img').setAttribute("src",`${prodDetiles.images[0]}`);
     document.querySelector(".title").textContent=`${prodDetiles.title}`;
     document.querySelector(".description").textContent=`${prodDetiles.description}`;
     document.querySelector(".oldprice").textContent=`${prodDetiles.price}`;
     document.querySelector(".descountPrice").textContent=`${prodDetiles.price }*${prodDetiles.discountPercentage}`;
-    document.querySelector(".rating").textContent=`${prodDetiles.rating}`;
     document.querySelector(".brand").textContent=`${prodDetiles.brand}`;
 
     let result='';
@@ -38,6 +39,7 @@ const displayProductDetials=async()=>{
     }).join("");
 
     document.querySelector(".reviews").innerHTML=result;
+
 
 
 
