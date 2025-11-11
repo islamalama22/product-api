@@ -23,7 +23,7 @@ const displayProductsPagenation = async (page = 1) => {
     result = products
       .map((product) => {
         return `
-      <div class=" col-lg-4  col-md-6  pb-3 "> 
+      <div class=" col-lg-3  col-md-4  pb-3 "> 
                         <div class="card" >
                              <img src="${product.thumbnail}" class="card-img-top w-100" alt="..."> 
                             <div class="card-body">

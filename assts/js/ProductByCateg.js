@@ -23,11 +23,18 @@ export const  displayProd=async(getFunction)=>{
     
     console.log("disply fun= ",response.data.products);
     const products=response.data.products;
+    const contOfProdcts=products.length;
+    console.log("contOfProdcts is = ",contOfProdcts);
+
+    if(contOfProdcts===0){
+      document.querySelector(".userMassege").textContent=(" no  prodcutes  ,  it wll be  ")
+    }else{
+
 
     let result=``;
     result=products.map((product)=>{
         return `
-         <div class=" col-lg-4  col-md-6  pb-3 "> 
+         <div class=" col-lg-3  col-md-4  pb-3 "> 
                         <div class="card" >
                              <img src="${product.thumbnail}" class="card-img-top w-100" alt="..."> 
                             <div class="card-body">
@@ -41,7 +48,7 @@ export const  displayProd=async(getFunction)=>{
         `;
     }).join("");
 
-    document.querySelector(".AllproductsDisply_Section   .prodect-col-item").innerHTML=result;
+    document.querySelector(".AllproductsDisply_Section   .prodect-col-item").innerHTML=result;}
 };
 
 displayProd(GetProductByCategury);
