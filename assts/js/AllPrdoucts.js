@@ -23,17 +23,17 @@ const displayProductsPagenation = async (page = 1) => {
     result = products
       .map((product) => {
         return `
-      <div class=" col-lg-3  col-md-4  pb-3 "> 
+     <div class=" col-lg-3 col-md-4 col-sm-6 pb-4"> 
                         <div class="card" >
-                             <img src="${product.thumbnail}" class="card-img-top w-100" alt="..."> 
-                            <div class="card-body">
-                                <h5 class="card-title">${product.title}</h5>
-                                <p class="card-text ">${product.description}</p>
-                                <a href="./productDetiles.html?productId=${product.id}" class="btn btn-primary">  more</a>
-            </div>
+                             <img src="${product.images[0]}" class="card-img-top" alt="..."> 
+                            <div class="card-body" >
+                                <h5 class="card-title fst-italic"> ${product.title}</h5>
+                                <p class="card-text  " ">${product.description}</p>
+                                <a href="./productDetiles.html?productId=${product.id}"  class="btn btn-primary DetailsBtn"  >Details</a>
+                            </div>
+                        </div> 
          </div>
-      </div>
-    
+
     `;
       })
       .join("");
@@ -53,7 +53,7 @@ const renderPagenation = async (currentPage, numberOfPages) => {
 
   if (currentPage > 1) {
     pagintationLink += `<li class="page-item">
-            <button class="page-link" onclick="displayProductsPagenation(${
+            <button class="page-link " onclick="displayProductsPagenation(${
               currentPage - 1
             })">Previous</button>
         </li>`;
@@ -118,7 +118,7 @@ const displayCategury = async () => {
   result = categurys
     .map((categury) => {
       return `
-      <li class="list-group-item"><a href="./productByCateg.html?categuryName=${categury.name}">${categury.name}</a></li>
+      <li class="list-group-item text-dark"><a class="text-dark" href="./productByCateg.html?categuryName=${categury.name}">${categury.name}</a></li>
     `;
     })
     .join("");
@@ -128,13 +128,18 @@ const displayCategury = async () => {
 
 displayCategury();
 
+import { displayProd, getProdBySort } from "./ProductByCateg.js";
+
+const AscendingBtn = document.querySelector(".Ascending");
+const DescendingBtn = document.querySelector(".Descending");
+
+AscendingBtn.addEventListener("click", () => {
+  displayProd(() => getProdBySort("asc"));
+});
+DescendingBtn.addEventListener("click", () => {
+  displayProd(() => getProdBySort("desc"));
+});
 
 
-import {displayProd,getProdBySort}from './ProductByCateg.js';
 
-const AscendingBtn=document.querySelector(".Ascending");
-const DescendingBtn=document.querySelector(".Descending");
-
-AscendingBtn.addEventListener('click',()=> { displayProd(()=> getProdBySort("asc"))});
-DescendingBtn.addEventListener('click',()=>{ displayProd(()=> getProdBySort("desc"))});
-
+window.displayProductsPagenation = displayProductsPagenation;

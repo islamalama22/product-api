@@ -46,3 +46,29 @@ const displayProductDetials=async()=>{
 
 };
 displayProductDetials();
+
+
+   const AddCartBtn= document.querySelector(".AddToCart");
+
+AddCartBtn.addEventListener("click", async()=>{
+    const response=await GetProductById();
+    console.log(" her",response.data);
+    
+   let CartItems={
+    id:response.data.id,
+    title:response.data.title,
+    price:response.data.price,
+    image:response.data.images[0]
+    
+   };
+   console.log(CartItems);
+
+
+   //  add  the  prod  to  local  storg 
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.push(CartItems);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  console.log("✅ added to  cart : ", CartItems);
+
+
+});

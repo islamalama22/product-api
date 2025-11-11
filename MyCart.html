@@ -8,12 +8,12 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./assts/css/main.css">
-    <title> prodcutByCategury </title>
+    <title> Cart </title>
 </head>
 
 <body>
 
-   <header>
+    <header>
         <section class=" navbar_section   ">
             <div class="container-fluid px-5 ">
 
@@ -50,50 +50,47 @@
         </section>
     </header>
     <main>
-        <section class="titleOfPage"> <h1> </h1> </section>
-         <section class="userMassege   py-5  px-5"> <h2> </h2> </section>
 
-        <section class="AllproductsDisply_Section py-5">
+        <section class="container py-5"> <h2> My Cart</h2> </section>
 
-            <div class="container-fluid  px-5">
-                <div class="row  gap-4 ">
-                        <div class="row prodect-col-item ">
-                            <div class=" col-lg-4  col-md-6 ">
-                                <div class="card">
-                                    <img src="#" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title"></h5>
-                                        <p class="card-text"></p>
-                                        <a href="#" class="btn btn-primary"></a>
-                                    </div>
-                                </div>
+        <section class="myCart_section">
+            <div class="container">
+                <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">image </th>
+      <th scope="col">countity</th>
+      <th scope="col">price</th>
+      <th scope="col">Totle price</th>
 
-                        </div>
-                    </div>
+    </tr>
+  </thead>
+  <tbody class="tableBody">
+    <tr>
+      <td>masckara</td>
+      <td><img src="" alt=""></td>
+      <td>
+        <div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-secondary btn1 " id="btn1">+</button>
+  <button type="button" class="btn btn-secondary btn2" id="btn2">1</button>
+  <button type="button" class="btn btn-secondary btn3" id="btn3">-</button>
+</div>
+      </td>
+     <td> 10$</td>
+     <td></td>
 
-
-                </div>
-            </div>
-
-
-
-        </section>
-
-
-
-        <section class="pagenation_page  py-5 ">
-            <div class="container-fluid  px-5 ">
-                <nav class="d-flex flex-nowrap justify-content-center" aria-label="Page navigation example ">
-                    <ul class="pagination ">
-                    </ul>
-                </nav>
+    </tr>
+   
+  </tbody>
+</table>
             </div>
         </section>
+  
 
 
     </main>
     <footer></footer>
-
 
 
 
@@ -124,7 +121,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <script src="./assts/js/ProductByCateg.js"  type="module"></script>
+    <script src="./assts/js/MyCart.js"  ></script>
 </body>
 
 </html>

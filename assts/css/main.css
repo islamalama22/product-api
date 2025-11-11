@@ -1,0 +1,18 @@
+a{
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+.navbar_section,
+.DetailsBtn,
+.LoadMoreBtn,
+.page-link,
+.page-item {
+    background-color: black;
+    text-transform: capitalize;
+    color: aliceblue;
+    outline: none;
+    border: none;
+}
+

@@ -22,10 +22,10 @@ export const displayProducts = async () => {
          <div class=" col-lg-3 col-md-4 col-sm-6 pb-4"> 
                         <div class="card" >
                              <img src="${product.images[0]}" class="card-img-top" alt="..."> 
-                            <div class="card-body">
-                                <h5 class="card-title"> ${product.title}</h5>
-                                <p class="card-text">${product.description}</p>
-                                <a href="./productDetiles.html?productId=${product.id}"  class="btn btn-primary"  >more</a>
+                            <div class="card-body" >
+                                <h5 class="card-title fst-italic"> ${product.title}</h5>
+                                <p class="card-text  " style="height: 180px;">${product.description}</p>
+                                <a href="./productDetiles.html?productId=${product.id}"  class="btn btn-primary DetailsBtn"  >Details</a>
                             </div>
                         </div> 
          </div>
