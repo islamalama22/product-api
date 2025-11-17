@@ -6,7 +6,7 @@
   if (response.status === 200) {
     return response;
   }
-};
+}; 
 
 export const displayProducts = async () => {
   try {

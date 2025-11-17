@@ -8,12 +8,12 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./assts/css/main.css">
-    <title> products  detalils </title>
+    <title> products detalils </title>
 </head>
 
 <body>
 
-   <header>
+    <header>
         <section class=" navbar_section   ">
             <div class="container-fluid px-5 ">
 
@@ -38,9 +38,9 @@
                             <a class="nav-link" href="./CreatProduct.html">creat product</a>
 
                         </li>
-                          <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="./MyCart.html">My Cart</a>
-                            
+
                         </li>
 
                     </ul>
@@ -49,41 +49,258 @@
 
         </section>
     </header>
-<main>
-    <section class="product_details_section" >
-        <div class="container-fluid  px-5">
-            <div class="product_details">
-             <img src="#" alt="" class="product-img  " width="600rem" height="700rem"  >
-            <h2 class="title"></h2>
-            <p class="description"></p>
-            <div class="price">
-                <p class="oldprice"></p>
-                <p class="descountPrice"></p>
-            </div>  
+    <main>
+        <section class="product_details_section">
+            <div class="container">
+                <div class="product_details">
+                    <div class="row">
+                        <div class="col-7 ">  
+                         <img src="#" alt="" class="product-img  " width="500rem" height="500rem"></div>
+                        <div class="col-5 py-5 ">
 
-            <h2 class="brand"></h2>
-            <div class="reviews">
-             <div class="row">
-                <div class="reviwe-user-data d-flex flex-wrap ">
-                    <p class="reviewerName"></p>
-                    <p class="reviewerEmail"></p>
+                    <h2 class="title "></h2>
+                    <p class="description"></p>
+                    <div class="price  row  d-flex flex-wrap ">
+                        <p class="btn oldprice border-dark mx-3 rounded-0  text-white bg-dark px-4    "></p>
+                        <p class="btn descountPrice border-dark rounded-0 text-white bg-dark px-4"></p>
+                    </div>
+                    <a class="AddToCart btn descountPrice border-dark  rounded-0 text-white bg-dark  px-5  "> Add Cart</a>
+
+
+                        </div>
+
+                    </div>
+                   
+                  <div class="reviews">
+                        <div class="row ">
+                            <div class="reviwe-user-data d-flex flex-wrap   text-dark  ">
+                                <p class="reviewerName "></p>
+                                <p class="reviewerEmail  "></p>
+                            </div>
+
+                            <p class="comment  "> </p>
+
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </section>
+    </main>
 
-                <p class="comment"> </p>
 
-            </div></div>
-
-
-            <button class="AddToCart  btn"> Add Cart</button>
-
-        </div></div>
-    </section>
-</main>
-
-   
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <script src="./assts/js/ProductDetails.js"></script>
 </body>
 
 </html>
+
+
+
+
+   <div class="  
+
+
+
+  /* Display & Flex */
+  d-none d-inline d-inline-block d-block d-flex d-inline-flex
+  d-sm-none d-sm-flex d-md-inline-flex d-lg-none d-xl-flex d-xxl-block
+  flex-row flex-row-reverse flex-column flex-column-reverse flex-wrap flex-wrap-reverse flex-nowrap
+  justify-content-start justify-content-center justify-content-end justify-content-between justify-content-around justify-content-evenly
+  align-items-start align-items-center align-items-end align-items-baseline align-items-stretch
+  align-content-start align-content-center align-content-end align-content-between align-content-around
+  flex-grow-0 flex-grow-1 flex-shrink-0 flex-shrink-1 flex-fill
+  order-0 order-1 order-2 order-3 order-4 order-last
+
+  /* Width & Height */
+  w-auto w-25 w-50 w-75 w-100 min-w-0 min-w-100 max-w-100 vw-100
+  h-auto h-25 h-50 h-75 h-100 min-h-0 min-h-100 max-h-100 vh-100
+
+  /* Padding */
+  p-0 p-1 p-2 p-3 p-4 p-5
+  px-0 px-1 px-2 px-3 px-4 px-5
+  py-0 py-1 py-2 py-3 py-4 py-5
+  pt-0 pt-1 pt-2 pt-3 pt-4 pt-5
+  pb-0 pb-1 pb-2 pb-3 pb-4 pb-5
+  ps-0 ps-1 ps-2 ps-3 ps-4 ps-5
+  pe-0 pe-1 pe-2 pe-3 pe-4 pe-5
+
+  /* Margin */
+  m-0 m-1 m-2 m-3 m-4 m-5
+  mx-0 mx-1 mx-2 mx-3 mx-4 mx-5
+  my-0 my-1 my-2 my-3 my-4 my-5
+  mt-0 mt-1 mt-2 mt-3 mt-4 mt-5
+  mb-0 mb-1 mb-2 mb-3 mb-4 mb-5
+  ms-0 ms-1 ms-2 ms-3 ms-4 ms-5
+  me-0 me-1 me-2 me-3 me-4 me-5
+
+  /* Position */
+  position-static position-relative position-absolute position-fixed position-sticky sticky-top
+  top-0 top-50 top-100 bottom-0 bottom-50 bottom-100
+  start-0 start-50 start-100 end-0 end-50 end-100
+  translate-middle translate-middle-x translate-middle-y
+
+  /* Overflow */
+  overflow-auto overflow-hidden overflow-scroll overflow-visible overflow-x-auto overflow-y-auto overflow-x-hidden overflow-y-hidden overflow-x-scroll overflow-y-scroll
+
+  /* Visibility */
+  visible invisible visually-hidden visually-hidden-focusable
+  user-select-auto user-select-all user-select-none
+  cursor-default cursor-pointer cursor-wait cursor-text
+
+  /* Text */
+  text-start text-center text-end
+  text-wrap text-nowrap text-break text-truncate
+  text-primary text-secondary text-success text-danger text-warning text-info text-light text-dark text-white text-body text-muted
+  text-decoration-none text-decoration-underline text-decoration-line-through
+  text-lowercase text-uppercase text-capitalize
+  fst-italic fst-normal fw-light fw-normal fw-bold fw-bolder
+  fs-1 fs-2 fs-3 fs-4 fs-5 fs-6
+  lh-1 lh-sm lh-base lh-lg lh-xl
+
+  /* Background */
+  bg-primary bg-secondary bg-success bg-danger bg-warning bg-info bg-light bg-dark bg-white bg-transparent
+
+  /* Borders */
+  border border-0 border-1 border-2 border-3 border-4 border-5
+  border-top border-top-0 border-bottom border-bottom-0 border-start border-start-0 border-end border-end-0
+  border-primary border-secondary border-success border-danger border-warning border-info border-light border-dark border-white
+  rounded rounded-0 rounded-1 rounded-2 rounded-3 rounded-circle rounded-pill
+
+  /* Shadow */
+  shadow-none shadow-sm shadow shadow-lg
+
+  /* Opacity */
+  opacity-0 opacity-25 opacity-50 opacity-75 opacity-100
+
+  /* Animation (assumed custom or bootstrap additions) */
+  animation-grow animation-shrink animation-fade animation-slide animation-bounce
+
+  /* Misc */
+  visually-hidden visually-hidden-focusable
+  stretched-link
+    d-flex flex-row flex-wrap flex-md-nowrap flex-lg-row-reverse 
+    justify-content-between justify-content-md-center justify-content-lg-evenly 
+    align-items-start align-items-lg-center 
+    align-content-between 
+    flex-grow-1 flex-shrink-0 flex-fill 
+    flex-column-reverse flex-md-row 
+    d-flex d-sm-flex d-md-flex d-lg-flex d-none 
+    col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 
+    w-100 h-100 min-vh-100 
+    p-1 p-sm-2 p-md-3 p-lg-4 p-xl-5 px-4 py-5 
+    m-1 m-sm-2 m-md-3 m-lg-4 m-xl-5 
+    gap-1 gap-2 gap-3 gap-4 
+    bg-primary bg-gradient bg-opacity-75 
+    text-white text-center text-uppercase text-break text-wrap 
+    text-decoration-underline text-decoration-line-through 
+    text-decoration-none 
+    fw-bold fst-italic 
+
+  d-flex d-inline-flex d-none d-sm-flex d-md-inline-flex d-lg-none d-xl-flex
+  flex-row flex-row-reverse flex-column flex-column-reverse flex-wrap flex-nowrap
+  justify-content-start justify-content-center justify-content-between justify-content-around justify-content-evenly
+  align-items-start align-items-center align-items-end align-items-baseline align-items-stretch
+  align-content-start align-content-center align-content-end align-content-between align-content-around
+  flex-grow-0 flex-grow-1 flex-shrink-0 flex-shrink-1 flex-fill
+  order-0 order-1 order-2 order-3 order-last
+  w-25 w-50 w-75 w-100 min-w-0 min-w-100 max-w-100
+  h-25 h-50 h-75 h-100 min-h-0 min-h-100 max-h-100
+  p-0 p-1 p-2 p-3 p-4 p-5 px-0 px-1 px-2 px-3 px-4 px-5 py-0 py-1 py-2 py-3 py-4 py-5
+  m-0 m-1 m-2 m-3 m-4 m-5 mx-0 mx-1 mx-2 mx-3 mx-4 mx-5 my-0 my-1 my-2 my-3 my-4 my-5
+  mt-0 mt-1 mt-2 mt-3 mt-4 mt-5 mb-0 mb-1 mb-2 mb-3 mb-4 mb-5 ms-0 ms-1 ms-2 ms-3 ms-4 ms-5 me-0 me-1 me-2 me-3 me-4 me-5
+  position-static position-relative position-absolute position-fixed position-sticky
+  top-0 top-50 top-100 bottom-0 bottom-50 bottom-100 start-0 start-50 start-100 end-0 end-50 end-100
+  translate-middle translate-middle-x translate-middle-y
+  overflow-auto overflow-hidden overflow-scroll overflow-visible
+  visible invisible
+  text-start text-center text-end text-wrap text-nowrap text-break
+  text-primary text-secondary text-success text-danger text-warning text-info text-light text-dark
+  bg-primary bg-secondary bg-success bg-danger bg-warning bg-info bg-light bg-dark bg-white bg-transparent
+  border border-0 border-1 border-2 border-3 border-4 border-5 border-primary border-secondary border-success border-danger
+  rounded rounded-0 rounded-1 rounded-2 rounded-3 rounded-circle rounded-pill
+  shadow-none shadow-sm shadow-lg shadow
+  opacity-0 opacity-25 opacity-50 opacity-75 opacity-100
+  fst-italic fst-normal fw-bold fw-light fw-normal
+  fs-1 fs-2 fs-3 fs-4 fs-5 fs-6
+  lh-1 lh-sm lh-base lh-lg lh-xl
+  user-select-all user-select-auto user-select-none
+  visually-hidden visually-hidden-focusable
+    fs-1 fs-sm-2 fs-md-3 fs-lg-4 fs-xl-5 
+    lh-1 lh-sm lh-base lh-lg lh-xl 
+    font-monospace 
+    border border-0 border-1 border-2 border-3 border-primary border-top border-end border-bottom border-start 
+    rounded rounded-0 rounded-1 rounded-2 rounded-3 rounded-circle 
+    shadow-sm shadow shadow-lg shadow-none 
+    overflow-hidden overflow-auto overflow-scroll 
+    position-relative position-absolute position-fixed 
+    top-0 start-0 end-0 bottom-0 
+    z-3 z-2 z-1 
+    order-1 order-md-2 order-lg-3 
+    translate-middle     
+      d-flex flex-column flex-md-row justify-content-center align-items-center
+  p-3 p-md-5 mx-auto my-4
+    p-1 p-sm-2 p-md-3 p-lg-4 p-xl-5
+  m-1 m-sm-2 m-md-3 m-lg-4 m-xl-5
+   m-1 m-sm-2 m-md-3 m-lg-4 m-xl-5
+  p-1 p-sm-2 p-md-3 p-lg-4 p-xl-5
+  mt-1 mt-sm-2 mt-md-3 mt-lg-4 mt-xl-5
+  mb-1 mb-sm-2 mb-md-3 mb-lg-4 mb-xl-5
+  pt-1 pt-sm-2 pt-md-3 pt-lg-4 pt-xl-5
+  d-block d-sm-flex d-md-block d-lg-flex
+  flex-column flex-sm-row
+  justify-content-center justify-content-sm-between
+  align-items-center align-items-md-start
+  text-start text-sm-center text-md-end text-uppercase
+  float-start float-sm-end
+  fs-6 fs-sm-5 fs-md-4 fs-lg-3 fs-xl-2
+  fw-light fw-normal fw-bold
+  position-relative position-md-absolute
+  w-100 w-sm-75 w-md-50 w-lg-25
+  h-auto h-sm-100
+  visible invisible
+  border border-0 border-sm border-start border-bottom-0
+  rounded rounded-sm rounded-circle
+  d-block d-sm-flex d-md-inline-block d-lg-none
+  float-none float-sm-start float-md-end
+  fs-3 fs-sm-4 fs-md-5
+  fw-normal fw-sm-semibold fw-lg-bold
+  text-start text-sm-center text-md-end
+  w-100 mw-100 h-auto
+  bg-light text-dark
+  border border-2 border-primary rounded shadow-lg
+  fs-4 fw-bold text-center text-uppercase
+  opacity-75
+  overflow-hidden
+  visually-hidden-xxl-visible
+  d-flex d-inline-flex d-none d-sm-flex d-md-inline-flex d-lg-none d-xl-flex 
+  flex-row flex-row-reverse flex-column flex-column-reverse flex-wrap flex-nowrap 
+  justify-content-start justify-content-center justify-content-between justify-content-around justify-content-evenly 
+  align-items-start align-items-center align-items-end align-items-baseline align-items-stretch 
+  align-content-start align-content-center align-content-end align-content-between align-content-around 
+  flex-grow-0 flex-grow-1 flex-shrink-0 flex-shrink-1 flex-fill 
+  order-0 order-1 order-2 order-3 order-last 
+  w-25 w-50 w-75 w-100 min-w-0 min-w-100 max-w-100 
+  h-25 h-50 h-75 h-100 min-h-0 min-h-100 max-h-100 
+  p-0 p-1 p-2 p-3 p-4 p-5 px-0 px-1 px-2 px-3 px-4 px-5 py-0 py-1 py-2 py-3 py-4 py-5 
+  m-0 m-1 m-2 m-3 m-4 m-5 mx-0 mx-1 mx-2 mx-3 mx-4 mx-5 my-0 my-1 my-2 my-3 my-4 my-5 
+  mt-0 mt-1 mt-2 mt-3 mt-4 mt-5 mb-0 mb-1 mb-2 mb-3 mb-4 mb-5 ms-0 ms-1 ms-2 ms-3 ms-4 ms-5 me-0 me-1 me-2 me-3 me-4 me-5 
+  position-static position-relative position-absolute position-fixed position-sticky 
+  top-0 top-50 top-100 bottom-0 bottom-50 bottom-100 start-0 start-50 start-100 end-0 end-50 end-100 
+  translate-middle translate-middle-x translate-middle-y 
+  overflow-auto overflow-hidden overflow-scroll overflow-visible 
+  visible invisible 
+  text-start text-center text-end text-wrap text-nowrap text-break 
+  text-primary text-secondary text-success text-danger text-warning text-info text-light text-dark 
+  bg-primary bg-secondary bg-success bg-danger bg-warning bg-info bg-light bg-dark bg-white bg-transparent 
+  border border-0 border-1 border-2 border-3 border-4 border-5 border-primary border-secondary border-success border-danger 
+  rounded rounded-0 rounded-1 rounded-2 rounded-3 rounded-circle rounded-pill 
+  shadow-none shadow-sm shadow-lg shadow 
+  opacity-0 opacity-25 opacity-50 opacity-75 opacity-100 
+  fst-italic fst-normal fw-bold fw-light fw-normal 
+  fs-1 fs-2 fs-3 fs-4 fs-5 fs-6 
+  lh-1 lh-sm lh-base lh-lg lh-xl 
+  user-select-all user-select-auto user-select-none 
+  visually-hidden visually-hidden-focusable 
+  animation-grow animation-shrink animation-fade animation-slide animation-bounce   d-flex justify-content-between align-items-center p-3 bg-light      "></div>
+            </div>

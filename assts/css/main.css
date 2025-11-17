@@ -16,3 +16,8 @@ a{
     border: none;
 }
 
+
+.product_details_section .oldprice{
+    text-decoration: line-through;
+}
+

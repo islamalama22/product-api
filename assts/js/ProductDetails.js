@@ -18,9 +18,8 @@ const displayProductDetials=async()=>{
     document.querySelector(".title").textContent=`${prodDetiles.title}`;
     document.querySelector(".description").textContent=`${prodDetiles.description}`;
     document.querySelector(".oldprice").textContent=`${prodDetiles.price}`;
-    document.querySelector(".descountPrice").textContent=`${prodDetiles.price }*${prodDetiles.discountPercentage}`;
-    document.querySelector(".brand").textContent=`${prodDetiles.brand}`;
-
+    const  FinalPrice= parseInt( prodDetiles.price -( prodDetiles.price *prodDetiles.discountPercentage /100));
+    document.querySelector(".descountPrice").textContent=`${FinalPrice}`;
     let result='';
     const reviews= prodDetiles.reviews;
    
@@ -32,7 +31,7 @@ const displayProductDetials=async()=>{
                     <h5 class="reviewerEmail"> ${reviwe.reviewerEmail}</h5>
                 </div>
 
-                <p class="comment">  ${reviwe.comment}</p>
+                <p class="comment ">  ${reviwe.comment}</p>
 
             </div></div>
      `
@@ -70,5 +69,5 @@ AddCartBtn.addEventListener("click", async()=>{
   localStorage.setItem("cart", JSON.stringify(cart));
   console.log("✅ added to  cart : ", CartItems);
 
-
+   
 });
